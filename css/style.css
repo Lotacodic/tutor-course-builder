@@ -6,14 +6,109 @@
   box-sizing: border-box;
 }
 
-.main-menu-items {
-  background: coral;
+:root {
+  --primary-color: #fc5d66;
+  --secondary-color: #ffc05a;
+  --light-color: #f9fafb;
+  --dark-color: #272d35;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+image {
+  max-width: 100%;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-sm {
+  max-width: 1000px;
+  padding: 0 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.3rem 2.3rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 32px;
+  background: var(--secondary-color);
+  color: var(--dark-color);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Navbar  */
+.navbar {
+  background: transparent;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 2rem 3rem;
+  z-index: 1000;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  width: 81px;
+  height: 32px;
+}
+
+.main-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 1.5rem;
+  font-weight: 700;
 }
 
 .navbar a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  padding: 10px 15px;
-  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+}
+
+.navbar a:hover {
+  color: var(--secondary-color);
+}
+
+.navbar i {
+  font-size: 1.5rem;
+}
+
+.hero {
+  background: #000 url("../images/header-background.jpg") center center/cover
+    no-repeat;
+  color: #fff;
+  padding: 11.5rem 2rem 8rem;
 }
