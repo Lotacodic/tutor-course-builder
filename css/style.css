@@ -154,7 +154,7 @@ img {
 /* Learn Section  */
 .section-header {
   max-width: 750px;
-  margin-bottom: 0 auto;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -197,4 +197,67 @@ img {
   font-size: 1rem;
   font-weight: 700;
   margin: 0.5rem 0;
+}
+
+/* Course Chapter  */
+.chapter-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1rem 0 4rem;
+}
+
+.chapters h2 {
+  margin-top: 3rem;
+}
+.chapter-cards img {
+  width: 130px;
+  margin-top: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.7rem;
+  background: #fff;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+.chapter-cards h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+/* Summary  */
+.summary {
+  background: var(--light-color);
+  color: var(--dark-color);
+  padding: 4rem 2rem 5rem;
+}
+
+.summary .lists {
+  background: #fff;
+  padding: 2rem;
+}
+
+.summary .list-header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.summary .list-item {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid #f1f4f6;
+}
+
+.summary .list-item:last-child {
+  border-bottom: none;
 }
