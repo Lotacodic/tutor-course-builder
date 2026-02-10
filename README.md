@@ -31,16 +31,15 @@ A responsive educational website for showcasing tutors, their expertise, and cou
 ## Project Structure
 
 ```
-tutor/
+tutor-course-builder/
 ├── index.html
-├── pages/
-│   └── tutor.html
+├── contact.html
 ├── css/
-│   └── style.css
+│ └── style.css
 ├── js/
-│   └── main.js
-├── assets/
-│   └── images/
+│ └── main.js
+├── images/
+│ └── (project images)
 └── README.md
 ```
 
